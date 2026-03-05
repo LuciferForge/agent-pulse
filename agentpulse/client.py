@@ -17,7 +17,7 @@ import requests
 
 log = logging.getLogger("agentpulse")
 
-DEFAULT_BASE_URL = "https://agentpulse.dev"
+DEFAULT_BASE_URL = "https://agent-pulse-production.up.railway.app"
 
 # Global client for one-liner usage
 _global_client = None
