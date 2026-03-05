@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-pulse"
+version = "0.1.0"
+description = "Dead man's switch for AI agents. Miss a heartbeat, get an alert."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "LuciferForge", email = "security@luciferforge.io"}]
+keywords = ["ai", "agent", "monitoring", "heartbeat", "watchdog", "mcp", "deadman-switch"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Monitoring",
+]
+dependencies = ["requests>=2.28"]
+
+[project.urls]
+Homepage = "https://github.com/LuciferForge/agent-pulse"
+Documentation = "https://github.com/LuciferForge/agent-pulse#readme"
+
+[tool.setuptools.packages.find]
+include = ["agentpulse*"]
+
+[project.optional-dependencies]
+server = [
+    "fastapi>=0.104",
+    "uvicorn>=0.24",
+    "httpx>=0.25",
+    "apscheduler>=3.10",
+    "python-dotenv>=1.0",
+]
