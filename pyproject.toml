@@ -9,7 +9,7 @@ description = "Dead man's switch for AI agents. Miss a heartbeat, get an alert."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
-authors = [{name = "LuciferForge", email = "security@luciferforge.io"}]
+authors = [{name = "LuciferForge", email = "LuciferForge@proton.me"}]
 keywords = ["ai", "agent", "monitoring", "heartbeat", "watchdog", "mcp", "deadman-switch"]
 classifiers = [
     "Development Status :: 3 - Alpha",
