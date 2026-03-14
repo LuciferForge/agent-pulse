@@ -15,5 +15,5 @@ Usage:
 
 from agentpulse.client import Client, init, ping
 
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 __all__ = ["Client", "init", "ping"]
