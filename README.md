@@ -2,7 +2,7 @@
 
 Dead man's switch for AI agents. Miss a heartbeat, get an alert.
 
-[![PyPI](https://img.shields.io/pypi/v/agent-pulse)](https://pypi.org/project/agent-pulse/)
+[![PyPI](https://img.shields.io/pypi/v/agent-heartbeat)](https://pypi.org/project/agent-heartbeat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## The Problem
@@ -16,7 +16,7 @@ Agent Pulse monitors your agents with heartbeats. If a heartbeat is missed, you 
 ## Quick Start
 
 ```bash
-pip install agent-pulse
+pip install agent-heartbeat
 ```
 
 ```python
@@ -66,7 +66,7 @@ print(status)  # {'status': 'alive', 'last_ping_at': '...'}
 ## Self-Hosting
 
 ```bash
-pip install agent-pulse[server]
+pip install agent-heartbeat[server]
 uvicorn server.main:app --host 0.0.0.0 --port 8000
 ```
 
@@ -74,11 +74,7 @@ Requires: Python 3.9+, SQLite (included). No external databases needed.
 
 ## Pricing
 
-| Plan | Agents | Min Interval | Channels | Price |
-|------|--------|-------------|----------|-------|
-| Free | 3 | 5 min | Telegram | $0 |
-| Indie | 20 | 1 min | Telegram + Email + Webhook | $9/mo |
-| Team | Unlimited | 30 sec | All | $19/mo |
+Self-hosted is free and unlimited. A hosted service with managed alerting is planned for a future release.
 
 ## Built by LuciferForge
 
